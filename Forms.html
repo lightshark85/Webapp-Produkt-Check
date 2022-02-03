@@ -20,19 +20,19 @@
 
                 <th><label>Produktname</label>
                 </th>
-                <td><input type="text" id="Productname"></td>
+                <td><label for="Productname"></label><input type="text" id="Productname" name="Produktname" ></td>
             </tr>
             <tr>
                 <th><label>Kundennutzen</label>
                 </th>
                 <td>
-                    <input type="radio" id="-3" name="fav_language" value="HTML">
-                    <input type="radio" id="-2" name="fav_language" value="HTML">
-                    <input type="radio" id="-1" name="fav_language" value="HTML">
-                    <input type="radio" id="0" name="fav_language" value="HTML">
-                    <input type="radio" id="1" name="fav_language" value="HTML">
-                    <input type="radio" id="2" name="fav_language" value="HTML">
-                    <input type="radio" id="3" name="fav_language" value="HTML">
+                    <input type="radio" class="rating" name="Kundennutzen" value="-3">
+                    <input type="radio" class="rating" name="Kundennutzen" value="-2">
+                    <input type="radio" class="rating" name="Kundennutzen" value="-1">
+                    <input type="radio" class="rating" name="Kundennutzen" value="0">
+                    <input type="radio" class="rating" name="Kundennutzen" value="1">
+                    <input type="radio" class="rating" name="Kundennutzen" value="2">
+                    <input type="radio" class="rating" name="Kundennutzen" value="3">
                     <br>
                 </td>
 
@@ -42,13 +42,13 @@
                 <th><label>Firmennutzen</label>
                 </th>
                 <td>
-                    <input type="radio" class="-3" name="fav_language" value="HTML">
-                    <input type="radio" class="-2" name="fav_language" value="HTML">
-                    <input type="radio" class="-1" name="fav_language" value="HTML">
-                    <input type="radio" class="0" name="fav_language" value="HTML">
-                    <input type="radio" class="1" name="fav_language" value="HTML">
-                    <input type="radio" class="2" name="fav_language" value="HTML">
-                    <input type="radio" class="3" name="fav_language" value="HTML">
+                    <input type="radio" class="rating" name="Firmennutzen" value="-3">
+                    <input type="radio" class="rating" name="Firmennutzen" value="-2">
+                    <input type="radio" class="rating" name="Firmennutzen" value="-1">
+                    <input type="radio" class="rating" name="Firmennutzen" value="0">
+                    <input type="radio" class="rating" name="Firmennutzen" value="1">
+                    <input type="radio" class="rating" name="Firmennutzen" value="2">
+                    <input type="radio" class="rating" name="Firmennutzen" value="3">
                     <br>
                 </td>
 
@@ -59,17 +59,17 @@
     </fieldset>
 </form>
 
-<button type="button" onclick="displayRadioValue()">
+<button type="button" onclick="displayInput()">
     Submit
 </button>
 
 <br>
-
+<div id="result-text"></div>
 <div id="result"></div>
 
 <footer>
     <hr>
-    <h4>Please enter follow us at https://www.youtube.com/channel/UCLkla4LPXMJM3GuHzyf3BLQ</h4>
+    <h4>Please follow us at https://www.youtube.com/channel/UCLkla4LPXMJM3GuHzyf3BLQ</h4>
 
 </footer>
 </body>
