@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <link rel = "stylesheet" href="Forms.css">
+    <meta charset="UTF-8">
+    <link href="Forms.css" rel="stylesheet">
     <title> My Form </title>
 </head>
 <body>
@@ -10,46 +10,102 @@
 <header>
     <h1>Forms</h1>
 </header>
-<script src="./formscript.js"></script>
+<script src="./formscript.js">
+
+</script>
+
 
 <form action="/add" method="POST">
     <fieldset>
         <h3>Add new Data</h3>
+
+            <label>Produktname</label>
+            <label for="Productname"></label><input id="Productname" name="Produktname" type="text">
+
+
         <table type="">
+
+            <tr>
+                <th>
+                    <label>
+                        Berreich
+                    </label>
+
+                </th>
+                <td>
+                    <label>-3</label>
+                </td>
+                <td>
+                    <label>-2</label>
+                </td>
+                <td>
+                    <label>-1</label>
+                </td>
+                <td>
+                    <label>0</label>
+                </td>
+                <td>
+                    <label>1</label>
+                </td>
+                <td>
+                    <label>2</label>
+                </td>
+                <td>
+                    <label>3</label>
+                </td>
+
+            </tr>
             <tr>
 
-                <th><label>Produktname</label>
-                </th>
-                <td><label for="Productname"></label><input type="text" id="Productname" name="Produktname" ></td>
-            </tr>
             <tr>
                 <th><label>Kundennutzen</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Kundennutzen" value="-3">
-                    <input type="radio" class="rating" name="Kundennutzen" value="-2">
-                    <input type="radio" class="rating" name="Kundennutzen" value="-1">
-                    <input type="radio" class="rating" name="Kundennutzen" value="0">
-                    <input type="radio" class="rating" name="Kundennutzen" value="1">
-                    <input type="radio" class="rating" name="Kundennutzen" value="2">
-                    <input type="radio" class="rating" name="Kundennutzen" value="3">
-                    <br>
+                    <input class="rating" name="Kundennutzen" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Kundennutzen" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Kundennutzen" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Kundennutzen" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Kundennutzen" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Kundennutzen" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Kundennutzen" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Innovativität</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Innovativität" value="-3">
-                    <input type="radio" class="rating" name="Innovativität" value="-2">
-                    <input type="radio" class="rating" name="Innovativität" value="-1">
-                    <input type="radio" class="rating" name="Innovativität" value="0">
-                    <input type="radio" class="rating" name="Innovativität" value="1">
-                    <input type="radio" class="rating" name="Innovativität" value="2">
-                    <input type="radio" class="rating" name="Innovativität" value="3">
-                    <br>
+                    <input class="rating" name="Innovativität" type="radio" value="-3">
+                </td>
+                <td>
+                    <input class="rating" name="Innovativität" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Innovativität" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Innovativität" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Innovativität" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Innovativität" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Innovativität" type="radio" value="3">
                 </td>
 
             </tr>
@@ -57,366 +113,598 @@
                 <th><label>Technische Qualität</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Technische Qualität" value="-3">
-                    <input type="radio" class="rating" name="Technische Qualität" value="-2">
-                    <input type="radio" class="rating" name="Technische Qualität" value="-1">
-                    <input type="radio" class="rating" name="Technische Qualität" value="0">
-                    <input type="radio" class="rating" name="Technische Qualität" value="1">
-                    <input type="radio" class="rating" name="Technische Qualität" value="2">
-                    <input type="radio" class="rating" name="Technische Qualität" value="3">
-                    <br>
+                    <input class="rating" name="Technische Qualität" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Technische Qualität" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Technische Qualität" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Technische Qualität" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Technische Qualität" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Technische Qualität" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Technische Qualität" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Zubehör, Optionen</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Zubehör, Optionen" value="-3">
-                    <input type="radio" class="rating" name="Zubehör, Optionen" value="-2">
-                    <input type="radio" class="rating" name="Zubehör, Optionen" value="-1">
-                    <input type="radio" class="rating" name="Zubehör, Optionen" value="0">
-                    <input type="radio" class="rating" name="Zubehör, Optionen" value="1">
-                    <input type="radio" class="rating" name="Zubehör, Optionen" value="2">
-                    <input type="radio" class="rating" name="Zubehör, Optionen" value="3">
-                    <br>
+                    <input class="rating" name="Zubehör, Optionen" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Zubehör, Optionen" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Zubehör, Optionen" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Zubehör, Optionen" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Zubehör, Optionen" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Zubehör, Optionen" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Zubehör, Optionen" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Dokumentation</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Dokumentation" value="-3">
-                    <input type="radio" class="rating" name="Dokumentation" value="-2">
-                    <input type="radio" class="rating" name="Dokumentation" value="-1">
-                    <input type="radio" class="rating" name="Dokumentation" value="0">
-                    <input type="radio" class="rating" name="Dokumentation" value="1">
-                    <input type="radio" class="rating" name="Dokumentation" value="2">
-                    <input type="radio" class="rating" name="Dokumentation" value="3">
-                    <br>
+                    <input class="rating" name="Dokumentation" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Dokumentation" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Dokumentation" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Dokumentation" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Dokumentation" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Dokumentation" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Dokumentation" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
-                <th><label>Kundennutzen</label>
+                <th><label>Serviceleistungen</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Serviceleistungen" value="-3">
-                    <input type="radio" class="rating" name="Serviceleistungen" value="-2">
-                    <input type="radio" class="rating" name="Serviceleistungen" value="-1">
-                    <input type="radio" class="rating" name="Serviceleistungen" value="0">
-                    <input type="radio" class="rating" name="Serviceleistungen" value="1">
-                    <input type="radio" class="rating" name="Serviceleistungen" value="2">
-                    <input type="radio" class="rating" name="Serviceleistungen" value="3">
-                    <br>
+                    <input class="rating" name="Serviceleistungen" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Serviceleistungen" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Serviceleistungen" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Serviceleistungen" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Serviceleistungen" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Serviceleistungen" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Serviceleistungen" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Marktpreis</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Marktpreis" value="-3">
-                    <input type="radio" class="rating" name="Marktpreis" value="-2">
-                    <input type="radio" class="rating" name="Marktpreis" value="-1">
-                    <input type="radio" class="rating" name="Marktpreis" value="0">
-                    <input type="radio" class="rating" name="Marktpreis" value="1">
-                    <input type="radio" class="rating" name="Marktpreis" value="2">
-                    <input type="radio" class="rating" name="Marktpreis" value="3">
-                    <br>
+                    <input class="rating" name="Marktpreis" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Marktpreis" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Marktpreis" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Marktpreis" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Marktpreis" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Marktpreis" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Marktpreis" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Händlerrabatte</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Händlerrabatte" value="-3">
-                    <input type="radio" class="rating" name="Händlerrabatte" value="-2">
-                    <input type="radio" class="rating" name="Händlerrabatte" value="-1">
-                    <input type="radio" class="rating" name="Händlerrabatte" value="0">
-                    <input type="radio" class="rating" name="Händlerrabatte" value="1">
-                    <input type="radio" class="rating" name="Händlerrabatte" value="2">
-                    <input type="radio" class="rating" name="Händlerrabatte" value="3">
-                    <br>
+                    <input class="rating" name="Händlerrabatte" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Händlerrabatte" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Händlerrabatte" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Händlerrabatte" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Händlerrabatte" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Händlerrabatte" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Händlerrabatte" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Preis/Leistung</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Preis/Leistung" value="-3">
-                    <input type="radio" class="rating" name="Preis/Leistung" value="-2">
-                    <input type="radio" class="rating" name="Preis/Leistung" value="-1">
-                    <input type="radio" class="rating" name="Preis/Leistung" value="0">
-                    <input type="radio" class="rating" name="Preis/Leistung" value="1">
-                    <input type="radio" class="rating" name="Preis/Leistung" value="2">
-                    <input type="radio" class="rating" name="Preis/Leistung" value="3">
-                    <br>
+                    <input class="rating" name="Preis/Leistung" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Preis/Leistung" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Preis/Leistung" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Preis/Leistung" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Preis/Leistung" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Preis/Leistung" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Preis/Leistung" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Flächendeckung</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Flächendeckung" value="-3">
-                    <input type="radio" class="rating" name="Flächendeckung" value="-2">
-                    <input type="radio" class="rating" name="Flächendeckung" value="-1">
-                    <input type="radio" class="rating" name="Flächendeckung" value="0">
-                    <input type="radio" class="rating" name="Flächendeckung" value="1">
-                    <input type="radio" class="rating" name="Flächendeckung" value="2">
-                    <input type="radio" class="rating" name="Flächendeckung" value="3">
-                    <br>
+                    <input class="rating" name="Flächendeckung" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Flächendeckung" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Flächendeckung" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Flächendeckung" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Flächendeckung" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Flächendeckung" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Flächendeckung" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Qualität Vertrieb</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Qualität Vertrieb" value="-3">
-                    <input type="radio" class="rating" name="Qualität Vertrieb" value="-2">
-                    <input type="radio" class="rating" name="Qualität Vertrieb" value="-1">
-                    <input type="radio" class="rating" name="Qualität Vertrieb" value="0">
-                    <input type="radio" class="rating" name="Qualität Vertrieb" value="1">
-                    <input type="radio" class="rating" name="Qualität Vertrieb" value="2">
-                    <input type="radio" class="rating" name="Qualität Vertrieb" value="3">
-                    <br>
+                    <input class="rating" name="Qualität Vertrieb" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Qualität Vertrieb" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Qualität Vertrieb" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Qualität Vertrieb" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Qualität Vertrieb" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Qualität Vertrieb" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Qualität Vertrieb" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Motivation Vertrieb</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Motivation Vertrieb" value="-3">
-                    <input type="radio" class="rating" name="Motivation Vertrieb" value="-2">
-                    <input type="radio" class="rating" name="Motivation Vertrieb" value="-1">
-                    <input type="radio" class="rating" name="Motivation Vertrieb" value="0">
-                    <input type="radio" class="rating" name="Motivation Vertrieb" value="1">
-                    <input type="radio" class="rating" name="Motivation Vertrieb" value="2">
-                    <input type="radio" class="rating" name="Motivation Vertrieb" value="3">
-                    <br>
+                    <input class="rating" name="Motivation Vertrieb" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Motivation Vertrieb" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Motivation Vertrieb" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Motivation Vertrieb" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Motivation Vertrieb" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Motivation Vertrieb" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Motivation Vertrieb" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Abnehmerbindung</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Abnehmerbindung" value="-3">
-                    <input type="radio" class="rating" name="Abnehmerbindung" value="-2">
-                    <input type="radio" class="rating" name="Abnehmerbindung" value="-1">
-                    <input type="radio" class="rating" name="Abnehmerbindung" value="0">
-                    <input type="radio" class="rating" name="Abnehmerbindung" value="1">
-                    <input type="radio" class="rating" name="Abnehmerbindung" value="2">
-                    <input type="radio" class="rating" name="Abnehmerbindung" value="3">
-                    <br>
+                    <input class="rating" name="Abnehmerbindung" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Abnehmerbindung" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Abnehmerbindung" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Abnehmerbindung" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Abnehmerbindung" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Abnehmerbindung" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Abnehmerbindung" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Lieferzeit</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Lieferzeit" value="-3">
-                    <input type="radio" class="rating" name="Lieferzeit" value="-2">
-                    <input type="radio" class="rating" name="Lieferzeit" value="-1">
-                    <input type="radio" class="rating" name="Lieferzeit" value="0">
-                    <input type="radio" class="rating" name="Lieferzeit" value="1">
-                    <input type="radio" class="rating" name="Lieferzeit" value="2">
-                    <input type="radio" class="rating" name="Lieferzeit" value="3">
-                    <br>
+                    <input class="rating" name="Lieferzeit" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Lieferzeit" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Lieferzeit" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Lieferzeit" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Lieferzeit" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Lieferzeit" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Lieferzeit" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Liefertreue</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Liefertreue" value="-3">
-                    <input type="radio" class="rating" name="Liefertreue" value="-2">
-                    <input type="radio" class="rating" name="Liefertreue" value="-1">
-                    <input type="radio" class="rating" name="Liefertreue" value="0">
-                    <input type="radio" class="rating" name="Liefertreue" value="1">
-                    <input type="radio" class="rating" name="Liefertreue" value="2">
-                    <input type="radio" class="rating" name="Liefertreue" value="3">
-                    <br>
+                    <input class="rating" name="Liefertreue" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Liefertreue" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Liefertreue" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Liefertreue" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Liefertreue" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Liefertreue" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Liefertreue" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Bekanntheitsgrad</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Bekanntheitsgrad" value="-3">
-                    <input type="radio" class="rating" name="Bekanntheitsgrad" value="-2">
-                    <input type="radio" class="rating" name="Bekanntheitsgrad" value="-1">
-                    <input type="radio" class="rating" name="Bekanntheitsgrad" value="0">
-                    <input type="radio" class="rating" name="Bekanntheitsgrad" value="1">
-                    <input type="radio" class="rating" name="Bekanntheitsgrad" value="2">
-                    <input type="radio" class="rating" name="Bekanntheitsgrad" value="3">
-                    <br>
+                    <input class="rating" name="Bekanntheitsgrad" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Bekanntheitsgrad" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Bekanntheitsgrad" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Bekanntheitsgrad" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Bekanntheitsgrad" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Bekanntheitsgrad" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Bekanntheitsgrad" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Produktimage</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Produktimage" value="-3">
-                    <input type="radio" class="rating" name="Produktimage" value="-2">
-                    <input type="radio" class="rating" name="Produktimage" value="-1">
-                    <input type="radio" class="rating" name="Produktimage" value="0">
-                    <input type="radio" class="rating" name="Produktimage" value="1">
-                    <input type="radio" class="rating" name="Produktimage" value="2">
-                    <input type="radio" class="rating" name="Produktimage" value="3">
-                    <br>
+                    <input class="rating" name="Produktimage" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Produktimage" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Produktimage" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Produktimage" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Produktimage" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Produktimage" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Produktimage" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Werbemaßnahmen</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Werbemaßnahmen" value="-3">
-                    <input type="radio" class="rating" name="Werbemaßnahmen" value="-2">
-                    <input type="radio" class="rating" name="Werbemaßnahmen" value="-1">
-                    <input type="radio" class="rating" name="Werbemaßnahmen" value="0">
-                    <input type="radio" class="rating" name="Werbemaßnahmen" value="1">
-                    <input type="radio" class="rating" name="Werbemaßnahmen" value="2">
-                    <input type="radio" class="rating" name="Werbemaßnahmen" value="3">
-                    <br>
+                    <input class="rating" name="Werbemaßnahmen" type="radio" value="-3">
                 </td>
+                <td>
+                    <input class="rating" name="Werbemaßnahmen" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Werbemaßnahmen" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Werbemaßnahmen" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Werbemaßnahmen" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Werbemaßnahmen" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Werbemaßnahmen" type="radio" value="3">
+                </td>
+
             </tr>
             <tr>
                 <th><label>Verkaufsförderung</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Verkaufsförderung" value="-3">
-                    <input type="radio" class="rating" name="Verkaufsförderung" value="-2">
-                    <input type="radio" class="rating" name="Verkaufsförderung" value="-1">
-                    <input type="radio" class="rating" name="Verkaufsförderung" value="0">
-                    <input type="radio" class="rating" name="Verkaufsförderung" value="1">
-                    <input type="radio" class="rating" name="Verkaufsförderung" value="2">
-                    <input type="radio" class="rating" name="Verkaufsförderung" value="3">
-                    <br>
+                    <input class="rating" name="Verkaufsförderung" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Verkaufsförderung" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Verkaufsförderung" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Verkaufsförderung" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Verkaufsförderung" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Verkaufsförderung" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Verkaufsförderung" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Pressearbeit</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Pressearbeit" value="-3">
-                    <input type="radio" class="rating" name="Pressearbeit" value="-2">
-                    <input type="radio" class="rating" name="Pressearbeit" value="-1">
-                    <input type="radio" class="rating" name="Pressearbeit" value="0">
-                    <input type="radio" class="rating" name="Pressearbeit" value="1">
-                    <input type="radio" class="rating" name="Pressearbeit" value="2">
-                    <input type="radio" class="rating" name="Pressearbeit" value="3">
-                    <br>
+                    <input class="rating" name="Pressearbeit" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Pressearbeit" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Pressearbeit" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Pressearbeit" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Pressearbeit" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Pressearbeit" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Pressearbeit" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Erzielte Umsätze</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Erzielte Umsätze" value="-3">
-                    <input type="radio" class="rating" name="Erzielte Umsätze" value="-2">
-                    <input type="radio" class="rating" name="Erzielte Umsätze" value="-1">
-                    <input type="radio" class="rating" name="Erzielte Umsätze" value="0">
-                    <input type="radio" class="rating" name="Erzielte Umsätze" value="1">
-                    <input type="radio" class="rating" name="Erzielte Umsätze" value="2">
-                    <input type="radio" class="rating" name="Erzielte Umsätze" value="3">
-                    <br>
+                    <input class="rating" name="Erzielte Umsätze" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Erzielte Umsätze" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Erzielte Umsätze" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Erzielte Umsätze" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Erzielte Umsätze" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Erzielte Umsätze" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Erzielte Umsätze" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Erzielte Gewinne (DB)</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Erzielte Gewinne (DB)" value="-3">
-                    <input type="radio" class="rating" name="Erzielte Gewinne (DB)" value="-2">
-                    <input type="radio" class="rating" name="Erzielte Gewinne (DB)" value="-1">
-                    <input type="radio" class="rating" name="Erzielte Gewinne (DB)" value="0">
-                    <input type="radio" class="rating" name="Erzielte Gewinne (DB)" value="1">
-                    <input type="radio" class="rating" name="Erzielte Gewinne (DB)" value="2">
-                    <input type="radio" class="rating" name="Erzielte Gewinne (DB)" value="3">
-                    <br>
+                    <input class="rating" name="Erzielte Gewinne (DB)" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Erzielte Gewinne (DB)" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Erzielte Gewinne (DB)" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Erzielte Gewinne (DB)" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Erzielte Gewinne (DB)" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Erzielte Gewinne (DB)" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Erzielte Gewinne (DB)" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Beschaffungssituation</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Beschaffungssituation" value="-3">
-                    <input type="radio" class="rating" name="Beschaffungssituation" value="-2">
-                    <input type="radio" class="rating" name="Beschaffungssituation" value="-1">
-                    <input type="radio" class="rating" name="Beschaffungssituation" value="0">
-                    <input type="radio" class="rating" name="Beschaffungssituation" value="1">
-                    <input type="radio" class="rating" name="Beschaffungssituation" value="2">
-                    <input type="radio" class="rating" name="Beschaffungssituation" value="3">
-                    <br>
+                    <input class="rating" name="Beschaffungssituation" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Beschaffungssituation" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Beschaffungssituation" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Beschaffungssituation" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Beschaffungssituation" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Beschaffungssituation" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Beschaffungssituation" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>F&E Kompetenz</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="F&E Kompetenz" value="-3">
-                    <input type="radio" class="rating" name="F&E Kompetenz" value="-2">
-                    <input type="radio" class="rating" name="F&E Kompetenz" value="-1">
-                    <input type="radio" class="rating" name="F&E Kompetenz" value="0">
-                    <input type="radio" class="rating" name="F&E Kompetenz" value="1">
-                    <input type="radio" class="rating" name="F&E Kompetenz" value="2">
-                    <input type="radio" class="rating" name="F&E Kompetenz" value="3">
-                    <br>
+                    <input class="rating" name="F&E Kompetenz" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="F&E Kompetenz" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="F&E Kompetenz" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="F&E Kompetenz" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="F&E Kompetenz" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="F&E Kompetenz" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="F&E Kompetenz" type="radio" value="3">
+                </td>
 
             </tr>
             <tr>
                 <th><label>Produktteam</label>
                 </th>
                 <td>
-                    <input type="radio" class="rating" name="Produktteam" value="-3">
-                    <input type="radio" class="rating" name="Produktteam" value="-2">
-                    <input type="radio" class="rating" name="Produktteam" value="-1">
-                    <input type="radio" class="rating" name="Produktteam" value="0">
-                    <input type="radio" class="rating" name="Produktteam" value="1">
-                    <input type="radio" class="rating" name="Produktteam" value="2">
-                    <input type="radio" class="rating" name="Produktteam" value="3">
-                    <br>
+                    <input class="rating" name="Produktteam" type="radio" value="-3">
                 </td>
-
+                <td>
+                    <input class="rating" name="Produktteam" type="radio" value="-2">
+                </td>
+                <td>
+                    <input class="rating" name="Produktteam" type="radio" value="-1">
+                </td>
+                <td>
+                    <input class="rating" name="Produktteam" type="radio" value="0">
+                </td>
+                <td>
+                    <input class="rating" name="Produktteam" type="radio" value="1">
+                </td>
+                <td>
+                    <input class="rating" name="Produktteam" type="radio" value="2">
+                </td>
+                <td>
+                    <input class="rating" name="Produktteam" type="radio" value="3">
+                </td>
 
             </tr>
 
@@ -425,12 +713,12 @@
 
     </fieldset>
 
-
 </form>
 
-<button type="button" onclick="displayInput()">
+<button class="button button2" onclick="displayInput()" type="button">
     Submit
 </button>
+
 
 <br>
 <div id="result-text"></div>
@@ -438,7 +726,7 @@
 
 <footer>
     <hr>
-    <h4>Please follow us at https://www.youtube.com/channel/UCLkla4LPXMJM3GuHzyf3BLQ</h4>
+    <h4 onclick="window.open(' https://www.youtube.com/channel/UCLkla4LPXMJM3GuHzyf3BLQ','_blank')"> Please follow us at Youtube!</h4>
 
 </footer>
 </body>
