@@ -6,10 +6,11 @@
 
 
             document.getElementById("result-text").innerHTML = "";
-            var text = document.getElementById('Productname')
+            var text = document.getElementById('Productname').value
+            var name = document.getElementById('Productname').name
 
             document.getElementById("result-text").innerHTML
-                += "Text String eingeben" +"<br>";
+                += name +": "+text +"<br>";
 
 
 
