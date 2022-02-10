@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <link href="Forms.css" rel="stylesheet">
     <title> My Form </title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+
 </head>
 <body>
 
 <header>
     <h1>Forms</h1>
 </header>
-<script src="./formscript.js">
 
-</script>
 
 
 <form action="/add" method="POST">
@@ -724,10 +724,24 @@
 <div id="result-text"></div>
 <div id="result"></div>
 
+<div id="diagram"    class="container">
+    <canvas id="myChart"></canvas>
+</div>
+
 <footer>
     <hr>
     <h4 onclick="window.open(' https://www.youtube.com/channel/UCLkla4LPXMJM3GuHzyf3BLQ','_blank')"> Please follow us at Youtube!</h4>
 
 </footer>
+
+<script src="main.js">
+</script>
+<script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+</script>
+
 </body>
 </html>
