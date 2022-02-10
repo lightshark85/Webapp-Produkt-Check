@@ -63,16 +63,19 @@ const labels = [
     'F&E Kompetenz',
     'Produktteam',
 ];
-
-const data = {
+var ctx = document.getElementById("Chart1");
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
     labels: labels,
     datasets: [{
         label: document.getElementById('Productname').value,
         backgroundColor: 'rgb(255, 99, 132)',
         borderColor: 'rgb(255, 99, 132)',
-        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        data: [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     }]
-};
+},
+});
 
 
 
@@ -86,7 +89,7 @@ const config = {
 
 //get input values
 function graphMe() {
-}
+
 
 
 
@@ -205,28 +208,29 @@ var ele = document.getElementsByClassName("rating")
 
 
     myChart.data.datasets[0].data[0] = v1;
-    myChart.data.datasets[1].data[0] = v2;
-    myChart.data.datasets[2].data[0] = v3;
-    myChart.data.datasets[3].data[0] = v4;
-    myChart.data.datasets[4].data[0] = v5;
-    myChart.data.datasets[5].data[0] = v6;
-    myChart.data.datasets[6].data[0] = v7;
-    myChart.data.datasets[7].data[0] = v8;
-    myChart.data.datasets[8].data[0] = v9;
-    myChart.data.datasets[9].data[0] = v10;
-    myChart.data.datasets[10].data[0] = v11;
-    myChart.data.datasets[11].data[0] = v12;
-    myChart.data.datasets[12].data[0] = v13;
-    myChart.data.datasets[13].data[0] = v14;
-    myChart.data.datasets[14].data[0] = v15;
-    myChart.data.datasets[15].data[0] = v16;
-    myChart.data.datasets[16].data[0] = v17;
-    myChart.data.datasets[17].data[0] = v18;
-    myChart.data.datasets[18].data[0] = v19;
-    myChart.data.datasets[19].data[0] = v20;
-    myChart.data.datasets[20].data[0] = v21;
-    myChart.data.datasets[21].data[0] = v22;
-    myChart.data.datasets[22].data[0] = v23;
-    myChart.data.datasets[23].data[0] = v24;
-    myChart.data.datasets[24].data[0] = v25;
+    myChart.data.datasets[0].data[1] = v2;
+    myChart.data.datasets[0].data[2] = v3;
+    myChart.data.datasets[0].data[3] = v4;
+    myChart.data.datasets[0].data[4] = v5;
+    myChart.data.datasets[0].data[5] = v6;
+    myChart.data.datasets[0].data[6] = v7;
+    myChart.data.datasets[0].data[7] = v8;
+    myChart.data.datasets[0].data[8] = v9;
+    myChart.data.datasets[0].data[9] = v10;
+    myChart.data.datasets[0].data[10] = v11;
+    myChart.data.datasets[0].data[11] = v12;
+    myChart.data.datasets[0].data[12] = v13;
+    myChart.data.datasets[0].data[13] = v14;
+    myChart.data.datasets[0].data[14] = v15;
+    myChart.data.datasets[0].data[15] = v16;
+    myChart.data.datasets[0].data[16] = v17;
+    myChart.data.datasets[0].data[17] = v18;
+    myChart.data.datasets[0].data[18] = v19;
+    myChart.data.datasets[0].data[19] = v20;
+    myChart.data.datasets[0].data[20] = v21;
+    myChart.data.datasets[0].data[21] = v22;
+    myChart.data.datasets[0].data[22] = v23;
+    myChart.data.datasets[0].data[23] = v24;
+    myChart.data.datasets[0].data[24] = v25;
     myChart.update();
+}
