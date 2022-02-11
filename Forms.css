@@ -66,11 +66,16 @@ form{
     margin: 20px;
 }
 
-table, td, th,tr{
-    border: 1px solid black;
+
+
+
+table,td, th,tr{
+    border: 1px solid rgba(28, 28, 27, 0.39);
     border-collapse: collapse;
+    padding: 5px;
 
 }
+
 th{
     background-color: rgb(255, 183, 221);
 }
