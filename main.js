@@ -81,6 +81,8 @@ var myChart = new Chart(ctx, {
     data: {
     labels: labels,
     datasets: [{
+        axis: 'y',
+        fill: false,
         label: document.getElementById('Productname').value,
         backgroundColor: 'rgb(255, 99, 132)',
         borderColor: 'rgb(255, 99, 132)',
@@ -95,12 +97,10 @@ const config = {
     //type: 'line',
     data: myChart.data.data,
     options: {
-        indexAxis: 'y',
-        scales:{
-            x:{
+        indexAxis: 'y'
 
-            }
-        }
+        
+        
     }
 };
 
