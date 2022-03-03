@@ -113,7 +113,11 @@ const config = {
           min: 10,
           max: 50,
         }
-      }
+      },
+      title: {
+        display: true,
+        text: document.getElementById('produktname').value + document.getElementById('datum').value,
+    },
 };
 
 
