@@ -1,56 +1,20 @@
 
-/*
-const labels = [
-    'Kundennutzen',
-    'Innovativität',
-    'Technische Qualität',
-    'Zubehör, Optionen',
-    'Dokumentation',
-    'Serviceleistungen',
-    'Marktpreis',
-    'Händlerrabatte',
-    'Preis/Leistung',
-    'Flächendeckung',
-    'Qualität Vertrieb',
-    'Motivation Vertrieb',
-    'Abnehmerbindung',
-    'Lieferzeit',
-    'Liefertreue',
-    'Bekanntheitsgrad',
-    'Produktimage',
-    'Werbemaßnahmen',
-    'Verkaufsförderung',
-    'Pressearbeit',
-    'Erzielte Umsätze',
-    'Erzielte Gewinne (DB)',
-    'Beschaffungssituation',
-    'F&E Kompetenz',
-    'Produktteam',
-]; */
-
-
-
-
+//Speicher für Werte
 let variables = [];
-let labels=[];
+let labels = [];
 let title = [];
 
-
+//die Werte aus der Tabelle holen
 function displayInput() {
-
 
     document.getElementById("result-text").innerHTML = "";
     let text = document.getElementById('Productname').value
     let name = document.getElementById('Productname').name
 
     if (text) {
-
-            title[0]=text;
-
+        title[0] = text;
     }
-
-    let t=0;
-
+    let t = 0;
     document.getElementById("result").innerHTML = "";
     let ele = document.getElementsByClassName('rating')
 
@@ -70,6 +34,7 @@ function displayInput() {
     }
 }
 
+//den chart configurieren
 let config = {
     type: 'line',
     options: {indexAxis: 'y'},
@@ -80,7 +45,7 @@ let config = {
         datasets: [{
             axis: 'y',
             fill: false,
-            label:title,
+            label: title,
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
             data: variables,
@@ -88,28 +53,12 @@ let config = {
     },
 };
 
-
+// Chart erstellen
 let ctx = document.getElementById("Chart1");
-let myChart = new Chart(ctx, /*{
-    type: 'line',
-    data: {
-    labels: labels,
-    datasets: [{
-        axis: 'y',
-        fill: false,
-        label: document.getElementById('Productname').value,
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
-        data: variables,
-    }]
-},
-},*/config);
+let myChart = new Chart(ctx, config);
 
 
-
-
-//get input values
-
+//den graph auktualisieren
 function graphMe() {
     myChart.update();
 
