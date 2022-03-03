@@ -28,49 +28,31 @@ const labels = [
     'Produktteam',
 ]; */
 
-const config = {
-    type: 'line',
-    data: myChart.data.data,
-    options: {
-        indexAxis: 'y'
 
-        
-        
-    },
-    scales: {
-        y: {
-          min: 10,
-          max: 50,
-        }
-      },
-      title: {
-        display: true,
-        text: document.getElementById('produktname').value + document.getElementById('datum').value,
-    },
-};
 
 
 let variables = [];
 let labels=[];
+let title = [];
 
 
 function displayInput() {
 
 
     document.getElementById("result-text").innerHTML = "";
-    var text = document.getElementById('Productname').value
-    var name = document.getElementById('Productname').name
+    let text = document.getElementById('Productname').value
+    let name = document.getElementById('Productname').name
 
     if (text) {
 
-        document.getElementById("result-text").innerHTML
-            += name + ": " + text + "<br>";
+            title[0]=text;
+
     }
 
     let t=0;
 
     document.getElementById("result").innerHTML = "";
-    var ele = document.getElementsByClassName('rating')
+    let ele = document.getElementsByClassName('rating')
 
     for (let i = 0; i < ele.length; i++) {
 
@@ -88,11 +70,27 @@ function displayInput() {
     }
 }
 
+let config = {
+    type: 'line',
+    options: {indexAxis: 'y'},
+    scales: {y: {min: 3, max: 5,}},
+    title: {display: true,},
+    data: {
+        labels: labels,
+        datasets: [{
+            axis: 'y',
+            fill: false,
+            label:title,
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: variables,
+        }]
+    },
+};
 
 
-
-var ctx = document.getElementById("Chart1");
-var myChart = new Chart(ctx, {
+let ctx = document.getElementById("Chart1");
+let myChart = new Chart(ctx, /*{
     type: 'line',
     data: {
     labels: labels,
@@ -105,7 +103,7 @@ var myChart = new Chart(ctx, {
         data: variables,
     }]
 },
-});
+},*/config);
 
 
 
@@ -114,4 +112,5 @@ var myChart = new Chart(ctx, {
 
 function graphMe() {
     myChart.update();
+
 }
