@@ -8,7 +8,7 @@
 
 //var v = ele.checked
 // if(v === 25){}
-
+/*
 const labels = [
     'Kundennutzen',
     'Innovativität',
@@ -35,12 +35,14 @@ const labels = [
     'Beschaffungssituation',
     'F&E Kompetenz',
     'Produktteam',
-];
+]; */
 
  let variables = [
-    1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
+   // 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
 
 ];
+
+let labels=[ ]
 
 function displayInput() {
 
@@ -67,12 +69,16 @@ function displayInput() {
             if (ele[i].checked) {
 
                 variables[t] = ele[i].value
+                labels[t] = ele[i].name
                 t++
+
             }
 
         }
     }
 }
+
+
 
 
 var ctx = document.getElementById("Chart1");
@@ -101,7 +107,13 @@ const config = {
 
         
         
-    }
+    },
+    scales: {
+        y: {
+          min: 10,
+          max: 50,
+        }
+      }
 };
 
 
