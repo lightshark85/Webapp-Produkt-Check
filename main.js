@@ -28,6 +28,28 @@ const labels = [
     'Produktteam',
 ]; */
 
+const config = {
+    type: 'line',
+    data: myChart.data.data,
+    options: {
+        indexAxis: 'y'
+
+        
+        
+    },
+    scales: {
+        y: {
+          min: 10,
+          max: 50,
+        }
+      },
+      title: {
+        display: true,
+        text: document.getElementById('produktname').value + document.getElementById('datum').value,
+    },
+};
+
+
 let variables = [];
 let labels=[];
 
@@ -86,27 +108,6 @@ var myChart = new Chart(ctx, {
 });
 
 
-
-const config = {
-    //type: 'line',
-    data: myChart.data.data,
-    options: {
-        indexAxis: 'y'
-
-        
-        
-    },
-    scales: {
-        y: {
-          min: 10,
-          max: 50,
-        }
-      },
-      title: {
-        display: true,
-        text: document.getElementById('produktname').value + document.getElementById('datum').value,
-    },
-};
 
 
 //get input values
