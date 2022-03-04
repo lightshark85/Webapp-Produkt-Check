@@ -1,8 +1,51 @@
 
-
+html{
+    height: 100%;
+}
 body {
+    height: 100%;
     background-color: rgba(185, 183, 255, 0.45);
 }
+
+
+#diagram{
+    float: right;
+    width: 48%;
+}
+#form{
+
+    width: 48%;
+    float: left;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
 
 .button {
     background-color: white;
@@ -61,21 +104,19 @@ footer {
     text-align: center;
 }
 form{
-    width: 45%;
+    width: 100%;
     display: inline-block;
     margin: 20px;
 }
 
-
+table{
+    width: 100%;
+}
 
 
 table,td, th,tr{
-    border: 1px solid rgba(28, 28, 27, 0.39);
+
     border-collapse: collapse;
     padding: 5px;
-
-}
-
-th{
-    background-color: rgba(183, 197, 255, 0.88);
+    text-align: center;
 }
