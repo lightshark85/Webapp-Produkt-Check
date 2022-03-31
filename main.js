@@ -98,30 +98,33 @@ function displayInput() {
 let config = {
     type: 'line',
     options: {indexAxis: 'y'},
-    scales: {y: {min: 3, max: 5,}},
+    scales: {y: {min:25}},
     title: {display: true,},
     data: {
+        labels:labels1,
         datasets: [{
             //axis: 'y',
             fill: false,
-            labels:labels1,
+            //labels:labels1,
             label: title1,
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
             data: variables1,
-        },{
+        },
+            {
             //axis: 'y',
             fill: false,
-            labels: labels2,
+            //labels: labels2,
             label: title2,
             backgroundColor: 'rgb(151,255,99)',
             borderColor: 'rgb(151,255,99)',
-            data: variables2,
+            data: [variables2,labels2]
 
-        },{
+        },
+            {
            // axis: 'y',
             fill: false,
-            labels: labels3,
+            //labels: labels3,
             label: title3,
             backgroundColor: 'rgb(69,224,243)',
             borderColor: 'rgb(69,224,243)',

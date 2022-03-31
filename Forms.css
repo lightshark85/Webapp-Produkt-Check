@@ -11,11 +11,18 @@ body {
 #diagram{
     float: right;
     width: 48%;
+    height: 100%;
 }
 #form{
 
     width: 48%;
     float: left;
+}
+
+#Chart1{
+
+    height: 800px;
+
 }
 
 /* Style the tab */
