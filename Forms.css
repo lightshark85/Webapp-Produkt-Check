@@ -9,9 +9,10 @@ body {
 
 
 #diagram{
+    position: relative;
     float: right;
-    width: 48%;
-    height: 100%;
+    width: 48%; 
+   
 }
 #form{
 
@@ -21,7 +22,7 @@ body {
 
 #Chart1{
 
-    height: 800px;
+    height: 800%; 
 
 }
 
