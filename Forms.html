@@ -15,8 +15,11 @@
 
 
 <header>
-    <a onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')" id="rickroll">Produktcheck</a>
+    <div class="header">
+        <h1 onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')" id="rickroll" >Produktcheck</h1>
+    </div>
 </header>
+
 <p id="Beschreibung">
     Für die erfolgreiche Durchsetzung eines Produkts spielen viele Einflussgrößen eine
     Rolle: Das Produkt selbst, Preis- und Absatzpolitik, Kommunikation und interne
@@ -28,20 +31,18 @@
     größten Chancen für die Zukunft zu sehen.
 </p>
 
+<div class="container" id="Button">
+    <div class="tab, row" >
+        <button class="tablinks, col-sm" onclick="openCity(event, 'form1')">Produkt 1</button>
+        <button class="tablinks, col-sm" onclick="openCity(event, 'form2')">Produkt 2</button>
+        <button class="tablinks, col-sm" onclick="openCity(event, 'form3')">Produkt 3</button>
+    </div>
+</div>
+<div class="container" >
 
-<div class="container">
 <div class="row">
     <div class="col-sm" id="form">
 
-  
-
-
-
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'form1')">Produkt 1</button>
-        <button class="tablinks" onclick="openCity(event, 'form2')">Produkt 2</button>
-        <button class="tablinks" onclick="openCity(event, 'form3')">Produkt 3</button>
-    </div>
 
     <div id="form1" class="tabcontent">
         <form onchange="displayInput();graphMe();">
