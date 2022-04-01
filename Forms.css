@@ -9,22 +9,20 @@ body {
 
 
 #diagram{
-    position: relative;
+
     float: right;
-    width: 48%; 
+    width: 48%;
    
 }
 #form{
 
     width: 48%;
     float: left;
+    margin-top: 25px;
 
 }
 
 #Chart1{
-
-    height: 800%; 
-
 }
 
 /* Style the tab */
@@ -117,11 +115,6 @@ form{
     display: inline-block;
 
 }
-
-table{
-    width: 100%;
-}
-
 
 table,td, th,tr{
 
