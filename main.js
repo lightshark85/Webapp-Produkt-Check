@@ -1,4 +1,5 @@
 
+
 //Speicher für Werte
 let variables1 = [];
 let variables2 = [];
@@ -104,6 +105,7 @@ let config = {
     },
 
 },
+
     
     title: {display: true,},
     data: {
