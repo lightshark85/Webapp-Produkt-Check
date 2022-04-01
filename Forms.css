@@ -7,22 +7,14 @@ body {
     background-color: rgba(185, 183, 255, 0.45);
 }
 
-/*
-#diagram{
-    width: 100%; 
-   
-}
+
 #form{
 
-    width: 100%;
+    margin-top: 25px;
+
 
 }
-*/
-#Chart1{
 
-    height: 100%; 
-
-}
 
 /* Style the tab */
 .tab {
@@ -114,11 +106,6 @@ form{
     display: inline-block;
 
 }
-
-table{
-    width: 100%;
-}
-
 
 table,td, th,tr{
 
