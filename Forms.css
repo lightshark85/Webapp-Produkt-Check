@@ -7,23 +7,20 @@ body {
     background-color: rgba(185, 183, 255, 0.45);
 }
 
-
+/*
 #diagram{
-    position: relative;
-    float: right;
-    width: 48%; 
+    width: 100%; 
    
 }
 #form{
 
-    width: 48%;
-    float: left;
+    width: 100%;
 
 }
-
+*/
 #Chart1{
 
-    height: 800%; 
+    height: 100%; 
 
 }
 
