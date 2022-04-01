@@ -7,6 +7,14 @@ body {
     background-color: rgba(185, 183, 255, 0.45);
 }
 
+#Beschreibung{
+    width: 80%;
+    text-align: center;
+    border-style: outset;
+    border-width: medium;
+    border-color: black;
+    margin-top: 20px;
+}
 
 #form{
 
