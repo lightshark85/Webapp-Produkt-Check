@@ -118,7 +118,7 @@ let config = {
             label: title2,
             backgroundColor: 'rgb(151,255,99)',
             borderColor: 'rgb(151,255,99)',
-            data: [variables2,labels2]
+            data: variables2,
 
         },
             {

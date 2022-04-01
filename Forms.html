@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
+<body onload="displayInput();graphMe();openCity(event,'form1')" >
+
 
 <header>
     <h1>Produktcheck</h1>
@@ -26,7 +27,7 @@
 
     <div id="form1" class="tabcontent">
         <form onchange="displayInput();graphMe();">
-    <fieldset>
+            <fieldset>
         <h3>Produkt 1</h3>
 
 
@@ -734,11 +735,11 @@
 
     </fieldset>
 
-</form>
+        </form>
     </div>
     <div id="form2" class="tabcontent">
         <form onchange="displayInput();graphMe();">
-        <fieldset>
+            <fieldset>
             <h3>Produkt 2</h3>
 
 
@@ -802,7 +803,7 @@
                         <input class="rating2" name="Kundennutzen" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Kundennutzen" type="radio" value="0">
+                        <input class="rating2" name="Kundennutzen" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Kundennutzen" type="radio" value="1">
@@ -828,7 +829,7 @@
                         <input class="rating2" name="Innovativität" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Innovativität" type="radio" value="0">
+                        <input class="rating2" name="Innovativität" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Innovativität" type="radio" value="1">
@@ -854,7 +855,7 @@
                         <input class="rating2" name="Technische Qualität" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Technische Qualität" type="radio" value="0">
+                        <input class="rating2" name="Technische Qualität" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Technische Qualität" type="radio" value="1">
@@ -880,7 +881,7 @@
                         <input class="rating2" name="Zubehör, Optionen" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Zubehör, Optionen" type="radio" value="0">
+                        <input class="rating2" name="Zubehör, Optionen" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Zubehör, Optionen" type="radio" value="1">
@@ -906,7 +907,7 @@
                         <input class="rating2" name="Dokumentation" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Dokumentation" type="radio" value="0">
+                        <input class="rating2" name="Dokumentation" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Dokumentation" type="radio" value="1">
@@ -932,7 +933,7 @@
                         <input class="rating2" name="Serviceleistungen" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Serviceleistungen" type="radio" value="0">
+                        <input class="rating2" name="Serviceleistungen" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Serviceleistungen" type="radio" value="1">
@@ -958,7 +959,7 @@
                         <input class="rating2" name="Marktpreis" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Marktpreis" type="radio" value="0">
+                        <input class="rating2" name="Marktpreis" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Marktpreis" type="radio" value="1">
@@ -984,7 +985,7 @@
                         <input class="rating2" name="Händlerrabatte" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Händlerrabatte" type="radio" value="0">
+                        <input class="rating2" name="Händlerrabatte" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Händlerrabatte" type="radio" value="1">
@@ -1010,7 +1011,7 @@
                         <input class="rating2" name="Preis/Leistung" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Preis/Leistung" type="radio" value="0">
+                        <input class="rating2" name="Preis/Leistung" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Preis/Leistung" type="radio" value="1">
@@ -1036,7 +1037,7 @@
                         <input class="rating2" name="Flächendeckung" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Flächendeckung" type="radio" value="0">
+                        <input class="rating2" name="Flächendeckung" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Flächendeckung" type="radio" value="1">
@@ -1062,7 +1063,7 @@
                         <input class="rating2" name="Qualität Vertrieb" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Qualität Vertrieb" type="radio" value="0">
+                        <input class="rating2" name="Qualität Vertrieb" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Qualität Vertrieb" type="radio" value="1">
@@ -1088,7 +1089,7 @@
                         <input class="rating2" name="Motivation Vertrieb" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Motivation Vertrieb" type="radio" value="0">
+                        <input class="rating2" name="Motivation Vertrieb" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Motivation Vertrieb" type="radio" value="1">
@@ -1114,7 +1115,7 @@
                         <input class="rating2" name="Abnehmerbindung" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Abnehmerbindung" type="radio" value="0">
+                        <input class="rating2" name="Abnehmerbindung" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Abnehmerbindung" type="radio" value="1">
@@ -1140,7 +1141,7 @@
                         <input class="rating2" name="Lieferzeit" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Lieferzeit" type="radio" value="0">
+                        <input class="rating2" name="Lieferzeit" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Lieferzeit" type="radio" value="1">
@@ -1166,7 +1167,7 @@
                         <input class="rating2" name="Liefertreue" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Liefertreue" type="radio" value="0">
+                        <input class="rating2" name="Liefertreue" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Liefertreue" type="radio" value="1">
@@ -1192,7 +1193,7 @@
                         <input class="rating2" name="Bekanntheitsgrad" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Bekanntheitsgrad" type="radio" value="0">
+                        <input class="rating2" name="Bekanntheitsgrad" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Bekanntheitsgrad" type="radio" value="1">
@@ -1218,7 +1219,7 @@
                         <input class="rating2" name="Produktimage" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Produktimage" type="radio" value="0">
+                        <input class="rating2" name="Produktimage" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Produktimage" type="radio" value="1">
@@ -1244,7 +1245,7 @@
                         <input class="rating2" name="Werbemaßnahmen" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Werbemaßnahmen" type="radio" value="0">
+                        <input class="rating2" name="Werbemaßnahmen" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Werbemaßnahmen" type="radio" value="1">
@@ -1270,7 +1271,7 @@
                         <input class="rating2" name="Verkaufsförderung" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Verkaufsförderung" type="radio" value="0">
+                        <input class="rating2" name="Verkaufsförderung" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Verkaufsförderung" type="radio" value="1">
@@ -1296,7 +1297,7 @@
                         <input class="rating2" name="Pressearbeit" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Pressearbeit" type="radio" value="0">
+                        <input class="rating2" name="Pressearbeit" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Pressearbeit" type="radio" value="1">
@@ -1322,7 +1323,7 @@
                         <input class="rating2" name="Erzielte Umsätze" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Erzielte Umsätze" type="radio" value="0">
+                        <input class="rating2" name="Erzielte Umsätze" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Erzielte Umsätze" type="radio" value="1">
@@ -1348,7 +1349,7 @@
                         <input class="rating2" name="Erzielte Gewinne (DB)" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Erzielte Gewinne (DB)" type="radio" value="0">
+                        <input class="rating2" name="Erzielte Gewinne (DB)" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Erzielte Gewinne (DB)" type="radio" value="1">
@@ -1374,7 +1375,7 @@
                         <input class="rating2" name="Beschaffungssituation" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Beschaffungssituation" type="radio" value="0">
+                        <input class="rating2" name="Beschaffungssituation" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Beschaffungssituation" type="radio" value="1">
@@ -1400,7 +1401,7 @@
                         <input class="rating2" name="F&E Kompetenz" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="F&E Kompetenz" type="radio" value="0">
+                        <input class="rating2" name="F&E Kompetenz" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="F&E Kompetenz" type="radio" value="1">
@@ -1426,7 +1427,7 @@
                         <input class="rating2" name="Produktteam" type="radio" value="-1">
                     </td>
                     <td>
-                        <input class="rating2" name="Produktteam" type="radio" value="0">
+                        <input class="rating2" name="Produktteam" type="radio" value="0" checked>
                     </td>
                     <td>
                         <input class="rating2" name="Produktteam" type="radio" value="1">
@@ -1446,7 +1447,7 @@
 
         </fieldset>
 
-    </form>
+        </form>
     </div>
     <div id="form3" class="tabcontent">
         <form onchange="displayInput();graphMe();">
@@ -1514,7 +1515,7 @@
                             <input class="rating3" name="Kundennutzen" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Kundennutzen" type="radio" value="0">
+                            <input class="rating3" name="Kundennutzen" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Kundennutzen" type="radio" value="1">
@@ -1540,7 +1541,7 @@
                             <input class="rating3" name="Innovativität" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Innovativität" type="radio" value="0">
+                            <input class="rating3" name="Innovativität" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Innovativität" type="radio" value="1">
@@ -1566,7 +1567,7 @@
                             <input class="rating3" name="Technische Qualität" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Technische Qualität" type="radio" value="0">
+                            <input class="rating3" name="Technische Qualität" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Technische Qualität" type="radio" value="1">
@@ -1592,7 +1593,7 @@
                             <input class="rating3" name="Zubehör, Optionen" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Zubehör, Optionen" type="radio" value="0">
+                            <input class="rating3" name="Zubehör, Optionen" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Zubehör, Optionen" type="radio" value="1">
@@ -1618,7 +1619,7 @@
                             <input class="rating3" name="Dokumentation" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Dokumentation" type="radio" value="0">
+                            <input class="rating3" name="Dokumentation" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Dokumentation" type="radio" value="1">
@@ -1644,7 +1645,7 @@
                             <input class="rating3" name="Serviceleistungen" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Serviceleistungen" type="radio" value="0">
+                            <input class="rating3" name="Serviceleistungen" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Serviceleistungen" type="radio" value="1">
@@ -1670,7 +1671,7 @@
                             <input class="rating3" name="Marktpreis" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Marktpreis" type="radio" value="0">
+                            <input class="rating3" name="Marktpreis" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Marktpreis" type="radio" value="1">
@@ -1696,7 +1697,7 @@
                             <input class="rating3" name="Händlerrabatte" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Händlerrabatte" type="radio" value="0">
+                            <input class="rating3" name="Händlerrabatte" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Händlerrabatte" type="radio" value="1">
@@ -1722,7 +1723,7 @@
                             <input class="rating3" name="Preis/Leistung" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Preis/Leistung" type="radio" value="0">
+                            <input class="rating3" name="Preis/Leistung" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Preis/Leistung" type="radio" value="1">
@@ -1748,7 +1749,7 @@
                             <input class="rating3" name="Flächendeckung" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Flächendeckung" type="radio" value="0">
+                            <input class="rating3" name="Flächendeckung" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Flächendeckung" type="radio" value="1">
@@ -1774,7 +1775,7 @@
                             <input class="rating3" name="Qualität Vertrieb" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Qualität Vertrieb" type="radio" value="0">
+                            <input class="rating3" name="Qualität Vertrieb" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Qualität Vertrieb" type="radio" value="1">
@@ -1800,7 +1801,7 @@
                             <input class="rating3" name="Motivation Vertrieb" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Motivation Vertrieb" type="radio" value="0">
+                            <input class="rating3" name="Motivation Vertrieb" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Motivation Vertrieb" type="radio" value="1">
@@ -1826,7 +1827,7 @@
                             <input class="rating3" name="Abnehmerbindung" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Abnehmerbindung" type="radio" value="0">
+                            <input class="rating3" name="Abnehmerbindung" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Abnehmerbindung" type="radio" value="1">
@@ -1852,7 +1853,7 @@
                             <input class="rating3" name="Lieferzeit" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Lieferzeit" type="radio" value="0">
+                            <input class="rating3" name="Lieferzeit" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Lieferzeit" type="radio" value="1">
@@ -1878,7 +1879,7 @@
                             <input class="rating3" name="Liefertreue" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Liefertreue" type="radio" value="0">
+                            <input class="rating3" name="Liefertreue" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Liefertreue" type="radio" value="1">
@@ -1904,7 +1905,7 @@
                             <input class="rating3" name="Bekanntheitsgrad" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Bekanntheitsgrad" type="radio" value="0">
+                            <input class="rating3" name="Bekanntheitsgrad" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Bekanntheitsgrad" type="radio" value="1">
@@ -1930,7 +1931,7 @@
                             <input class="rating3" name="Produktimage" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Produktimage" type="radio" value="0">
+                            <input class="rating3" name="Produktimage" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Produktimage" type="radio" value="1">
@@ -1956,7 +1957,7 @@
                             <input class="rating3" name="Werbemaßnahmen" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Werbemaßnahmen" type="radio" value="0">
+                            <input class="rating3" name="Werbemaßnahmen" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Werbemaßnahmen" type="radio" value="1">
@@ -1982,7 +1983,7 @@
                             <input class="rating3" name="Verkaufsförderung" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Verkaufsförderung" type="radio" value="0">
+                            <input class="rating3" name="Verkaufsförderung" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Verkaufsförderung" type="radio" value="1">
@@ -2008,7 +2009,7 @@
                             <input class="rating3" name="Pressearbeit" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Pressearbeit" type="radio" value="0">
+                            <input class="rating3" name="Pressearbeit" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Pressearbeit" type="radio" value="1">
@@ -2034,7 +2035,7 @@
                             <input class="rating3" name="Erzielte Umsätze" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Erzielte Umsätze" type="radio" value="0">
+                            <input class="rating3" name="Erzielte Umsätze" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Erzielte Umsätze" type="radio" value="1">
@@ -2060,7 +2061,7 @@
                             <input class="rating3" name="Erzielte Gewinne (DB)" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Erzielte Gewinne (DB)" type="radio" value="0">
+                            <input class="rating3" name="Erzielte Gewinne (DB)" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Erzielte Gewinne (DB)" type="radio" value="1">
@@ -2086,7 +2087,7 @@
                             <input class="rating3" name="Beschaffungssituation" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Beschaffungssituation" type="radio" value="0">
+                            <input class="rating3" name="Beschaffungssituation" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Beschaffungssituation" type="radio" value="1">
@@ -2112,7 +2113,7 @@
                             <input class="rating3" name="F&E Kompetenz" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="F&E Kompetenz" type="radio" value="0">
+                            <input class="rating3" name="F&E Kompetenz" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="F&E Kompetenz" type="radio" value="1">
@@ -2138,7 +2139,7 @@
                             <input class="rating3" name="Produktteam" type="radio" value="-1">
                         </td>
                         <td>
-                            <input class="rating3" name="Produktteam" type="radio" value="0">
+                            <input class="rating3" name="Produktteam" type="radio" value="0" checked>
                         </td>
                         <td>
                             <input class="rating3" name="Produktteam" type="radio" value="1">
