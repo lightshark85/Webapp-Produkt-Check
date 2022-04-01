@@ -122,3 +122,8 @@ table,td, th,tr{
     padding: 5px;
     text-align: center;
 }
+
+#rickroll{
+    font-size: 1.5cm;
+    align-self: center;
+}

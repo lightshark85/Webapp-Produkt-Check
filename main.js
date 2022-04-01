@@ -97,8 +97,14 @@ function displayInput() {
 //den chart configurieren
 let config = {
     type: 'line',
-    options: {indexAxis: 'y', aspectRatio: 0.5,},
-    //scales: {y: {min:25}},
+    options: {indexAxis: 'y', aspectRatio: 0.5,
+    scales: {x: {
+        min: -3,
+        max: 3,}
+    },
+
+},
+    
     title: {display: true,},
     data: {
         labels:labels1,
