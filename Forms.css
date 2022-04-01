@@ -169,4 +169,7 @@ table,td, th,tr{
     margin-left: 3%;
 }
 
-
+.col-sm{
+    padding-right: 0%;
+    padding-left: 0%;
+}
