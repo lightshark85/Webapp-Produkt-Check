@@ -8,7 +8,7 @@
     <title>Produktcheck</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="favicon%20(1).ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="icon" href="https://i.pinimg.com/originals/b7/fb/80/b7fb80122cf46d0e584f3a0768aef282.gif" type="image/gif" >
 
 </head>
 <body onload="displayInput();graphMe();openCity(event,'form1')" >
@@ -22,6 +22,8 @@
 <script type="text/javascript">
     window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='text'){e.preventDefault();return false;}}},true);
 </script>
+<div class="container, format">
+    <div class="row">
 <p id="Beschreibung">
     Für die erfolgreiche Durchsetzung eines Produkts spielen viele Einflussgrößen eine
     Rolle: Das Produkt selbst, Preis- und Absatzpolitik, Kommunikation und interne
@@ -32,15 +34,17 @@
     mögliche Schwachstellen zu erkennen, Entwicklungspotential zu erfassen und Ihre
     größten Chancen für die Zukunft zu sehen.
 </p>
+        </div>
+</div>
 
-<div class="container" id="Button">
-    <div class="tab, row" >
+<div class="container, format">
+    <div class="row" >
         <button class="tablinks, col-sm" onclick="openCity(event, 'form1')">Produkt 1</button>
         <button class="tablinks, col-sm" onclick="openCity(event, 'form2')">Produkt 2</button>
         <button class="tablinks, col-sm" onclick="openCity(event, 'form3')">Produkt 3</button>
     </div>
 </div>
-<div class="container" >
+<div class="container, format">
 
 <div class="row">
     <div class="col-sm" id="form">
@@ -2194,7 +2198,7 @@
 </div>
 
 
-<br>
+
 
  
 <div class="col-sm" id="diagramm">

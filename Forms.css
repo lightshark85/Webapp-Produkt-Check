@@ -56,9 +56,9 @@ body {
     border-width: medium;
     border-color: black;
     margin-top: 20px;
-    margin-right: 5%;
+   /* margin-right: 5%;
     margin-left: 5%;
-
+*/
 }
 
 
@@ -66,8 +66,8 @@ body {
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    margin-bottom: 10px;
+    background-color: #1D1F20;
+    margin-bottom: 20px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -90,7 +90,7 @@ body {
     background-color: #ccc;
 }
 
-
+/*
 .button {
     background-color: white;
     color: black;
@@ -123,7 +123,7 @@ body {
     background-color: #80bfff;
     color: white;
 }
-
+*/
 header {
     text-align: center;
     height: 100px;
@@ -149,8 +149,8 @@ footer {
 }
 form{
     width: 100%;
-    display: inline-block;
-
+  /*  display: inline-block;
+*/
 }
 
 table,td, th,tr{
@@ -164,3 +164,9 @@ table,td, th,tr{
     font-size: 1.5cm;
     align-self: center;
 }
+.format{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+
